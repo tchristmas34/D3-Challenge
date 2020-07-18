@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>The D3Times</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/d3Style.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-12">
+        <h1>Health Risks vs Demographics Across the U.S.</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12  col-md-12">
+        <div id="scatter">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6  col-md-4">
+        <div class="article">
+          <h2>Poverty and the Uninsured:</h2>
+          <p>Adults in low-income households are certainly more likely to be uninsured than people in higher income households, 
+            however, not all uninsured adults are in families with low incomes. Texas has the highest number of uninsured adults, 
+            but does not have the highest number of families in poverty. Therefore, there must be other factors that contribute to whether an individual is insured, or not.</p>
+        </div>
+      </div>
+      <div class="col-xs-6  col-md-4">
+        <div class="article">
+          <h2>Poverty and Smoking:</h2>
+          <p>In the United States, people living below the poverty level have higher rates of smoking than the general population. However, poverty does not appear to be the only factor
+            that contributes to the likelihood of cigarette smoking. States such as California and New York lie in the median in terms of poverty rates, but 
+            have some of the lowest rates of smoking relative to their populations.
+          </p>
+        </div>
+      </div>
+      <div class="col-xs-6  col-md-4">
+        <div class="article">
+          <h2>Poverty and Obesity:</h2>
+          <p>The United States is one of the wealthiest countries in the world and accordingly has high obesity rates. 
+            A third of the population has obesity, and another third is overweight. It has been suggested that individuals who live in 
+            impoverished regions have poor access to fresh food. Again, there are states such as New Hampshire that have very low poverty rates but still have relatively
+            higher rates of obesity.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6  col-md-4">
+        <div class="article">
+          <h2>Age and the Uninsured:</h2>
+          <p>Compared with other age groups, young adults are the most likely to go without coverage. This can be expected since young adults tend to be much healthier than other age groups,
+            and can typically risk being uninsured. Massachusetts appears to have the lowest number of uninsured individuals, while Texas has the highest rate, but a much lower median age.
+          An interesting case is Florida, where the median age is much higher than other states at 42, but has much higher rates of poverty.</p>
+        </div>
+      </div>
+      <div class="col-xs-6  col-md-4">
+        <div class="article">
+          <h2>Age and Smoking:</h2>
+          <p>It does appear that states with a large proportion of older age groups tend to have the highest rates of smoking. Perhaps states where the median age is higher 
+            have individuals that have smoked for many years, and have chosen not to quit. As opposed to states like Utah where the median age is very low, and has a lower population that doesn't smoke.
+          </p>
+        </div>
+      </div>
+      <div class="col-xs-6  col-md-4">
+        <div class="article">
+          <h2>Age and Obesity:</h2>
+          <p>There does appear to be slight correlation between a state's median age and level of obesity. It seems that higher age groups are more succeptible to being obese. Older age groups are typically 
+            less active than younger groups which might be one explanation as to why an older person is more likely to be obese.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6  col-md-4">
+        <div class="article">
+          <h2>Income and the Uninsured:</h2>
+          <p>The high cost of insurance is one factor as to why people do not seek to obtain insurance. Therefore, the trend between poverty levels and insured individuals can be seen.
+            However, this can be offset by a state's medicaid system that helps low income families obtain coverage. </p>
+        </div>
+      </div>
+      <div class="col-xs-6  col-md-4">
+        <div class="article">
+          <h2>Income and Smoking:</h2>
+          <p>A trend can be seen with income and smoking. Areas with high income levels will see a decrease in the levels of smoking throughout its community. Low income areas do
+            see an increase in smoking habits.
+          </p>
+        </div>
+      </div>
+      <div class="col-xs-6  col-md-4">
+        <div class="article">
+          <h2>Income and Obesity:</h2>
+          <p>Overall obesity prevalence does tend to decrease with increased levels of income. Just as poverty affects the availability of healthy food options, as does income. 
+            Lower income residents likely do not have the same access to low cost healthy food choices from higher income groups.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer-->
+  <div id="footer">
+    <h4>Data Source:</h4>
+    <p>All data for the visualization above sourced from: https://factfinder.census.gov/faces/nav/jsf/pages/searchresults.xhtml</p>
+    <br>
+    <p>Trilogy &copy; 2020</p>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+  <script type="text/javascript" src="assets/js/app.js"></script>
+
+</body>
+
+</html>
